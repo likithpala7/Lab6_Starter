@@ -4,8 +4,11 @@
 // Feel free to add your own here for part 2, if they are local files simply add their path as a string.
 const recipes = [
   'https://introweb.tech/assets/json/ghostCookies.json',
-  'https://introweb.tech/assets/json/birthdayCake.json',
-  'https://introweb.tech/assets/json/chocolateChip.json'
+  'https://introweb.tech/assets/json/birthdayCake.json', 
+  'https://introweb.tech/assets/json/chocolateChip.json',
+  'assets/recipes/brownies.json',
+  'assets/recipes/chicken_curry.json',
+  'assets/recipes/orange_chicken.json'
 ];
 
 // Once all of the recipes that were specified above have been fetched, their
@@ -43,6 +46,24 @@ async function fetchRecipes() {
     // in the recipes folder and fetch them from there. You'll need to add their paths to the recipes array.
 
     // Part 1 Expose - TODO
+    var i = 0;
+    for(const recipe of recipes){
+      fetch(recipe)
+        .then(response => {
+          if(!response.ok){
+            console.log("error");
+            reject(false);
+          }
+          return response.json();
+        })
+        .then(data => {
+          ++i;
+          (recipeData[recipe] = data);
+          if(i == recipes.length){
+            resolve(true);
+          }
+        });
+      }
   });
 }
 
@@ -51,9 +72,15 @@ function createRecipeCards() {
   // From within this function you can access the recipe data from the JSON 
   // files with the recipeData Object above. Make sure you only display the 
   // three recipes we give you, you'll use the bindShowMore() function to
-  // show any others you've added when the user clicks on the "Show more" button.
+  // show any others yousve added when the user clicks on the "Show more" button.
 
   // Part 1 Expose - TODO
+  for(var i = 0; i < 3; i++){
+    var rpar = document.querySelector('main');
+    var elem = document.createElement("recipe-card");
+    elem.data = recipeData[recipes[i]];
+    rpar.appendChild(elem);
+  }
 }
 
 function bindShowMore() {
@@ -65,4 +92,25 @@ function bindShowMore() {
   // in the recipeData object where you stored them/
 
   // Part 2 Explore - TODO
+  var button = document.querySelector("button");
+  button.addEventListener("click", function(){
+    if(button.textContent == "Show more"){
+      for(var i = 3; i < 6; i++){
+        var rpar = document.querySelector('main');
+        var elem = document.createElement("recipe-card");
+        elem.data = recipeData[recipes[i]];
+        rpar.appendChild(elem);
+      }
+      button.textContent = "Show less";
+    }
+    else{
+      var cards = document.querySelectorAll("recipe-card");
+      console.log(cards);
+      for(var i = 5; i > 2; i--){
+        cards[i].remove();
+      }
+      button.textContent = "Show more";
+    }
+    
+  });
 }

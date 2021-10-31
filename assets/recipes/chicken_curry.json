@@ -1,0 +1,252 @@
+{
+    "@context":"https://schema.org",
+    "@graph":[
+       {
+          "@type":"WebSite",
+          "@id":"https://www.cookingclassy.com/#website",
+          "url":"https://www.cookingclassy.com/",
+          "name":"Cooking Classy",
+          "description":"with a sprinkle of fancy",
+          "potentialAction":[
+             {
+                "@type":"SearchAction",
+                "target":{
+                   "@type":"EntryPoint",
+                   "urlTemplate":"https://www.cookingclassy.com/?s={search_term_string}"
+                },
+                "query-input":"required name=search_term_string"
+             }
+          ],
+          "inLanguage":"en-US"
+       },
+       {
+          "@type":"ImageObject",
+          "@id":"https://www.cookingclassy.com/chicken-curry/#primaryimage",
+          "inLanguage":"en-US",
+          "url":"https://www.cookingclassy.com/wp-content/uploads/2018/08/chicken-curry-15.jpg",
+          "thumbnailUrl":"https://www.cookingclassy.com/wp-content/uploads/2018/08/chicken-curry-15.jpg",
+          "width":1200,
+          "height":1800,
+          "headline":"Chicken Curry"
+       },
+       {
+          "@type":"WebPage",
+          "@id":"https://www.cookingclassy.com/chicken-curry/#webpage",
+          "url":"https://www.cookingclassy.com/chicken-curry/",
+          "name":"Chicken Curry {Flavorful Easy Recipe} - Cooking Classy",
+          "isPartOf":{
+             "@id":"https://www.cookingclassy.com/#website"
+          },
+          "primaryImageOfPage":{
+             "@id":"https://www.cookingclassy.com/chicken-curry/#primaryimage"
+          },
+          "datePublished":"2018-08-29T03:19:04+00:00",
+          "dateModified":"2021-01-12T18:33:33+00:00",
+          "author":{
+             "@id":"https://www.cookingclassy.com/#/schema/person/7b33b4e339a89e5b4d034e63fb316884"
+          },
+          "description":"Chicken pieces are cooked in a deliciously seasoned curry sauce then finished off with cream for richness and cilantro for color and freshness.",
+          "breadcrumb":{
+             "@id":"https://www.cookingclassy.com/chicken-curry/#breadcrumb"
+          },
+          "inLanguage":"en-US",
+          "potentialAction":[
+             {
+                "@type":"ReadAction",
+                "target":[
+                   "https://www.cookingclassy.com/chicken-curry/"
+                ]
+             }
+          ]
+       },
+       {
+          "@type":"BreadcrumbList",
+          "@id":"https://www.cookingclassy.com/chicken-curry/#breadcrumb",
+          "itemListElement":[
+             {
+                "@type":"ListItem",
+                "position":1,
+                "name":"Home",
+                "item":"https://www.cookingclassy.com/"
+             },
+             {
+                "@type":"ListItem",
+                "position":2,
+                "name":"Recipes",
+                "item":"https://www.cookingclassy.com/recipes/"
+             },
+             {
+                "@type":"ListItem",
+                "position":3,
+                "name":"Healthy",
+                "item":"https://www.cookingclassy.com/recipes/healthy/"
+             },
+             {
+                "@type":"ListItem",
+                "position":4,
+                "name":"Chicken Curry"
+             }
+          ]
+       },
+       {
+          "@type":"Person",
+          "@id":"https://www.cookingclassy.com/#/schema/person/7b33b4e339a89e5b4d034e63fb316884",
+          "name":"Jaclyn",
+          "sameAs":[
+             "https://www.cookingclassy.com"
+          ],
+          "url":"https://www.cookingclassy.com/author/jaclyn/"
+       },
+       {
+          "@context":"http://schema.org/",
+          "@type":"Recipe",
+          "name":"Chicken Curry",
+          "author":{
+             "@type":"Person",
+             "name":"Jaclyn"
+          },
+          "description":"Chicken pieces are cooked in an aromatic, deliciously seasoned curry sauce then it's finished off with cream for richness and cilantro for color and freshness. Serve alongside basmati rice or naan bread for soaking up the extra sauce.",
+          "datePublished":"2018-08-28T21:19:04+00:00",
+          "image":[
+             "https://www.cookingclassy.com/wp-content/uploads/2018/08/chicken-curry-11.jpg",
+             "https://www.cookingclassy.com/wp-content/uploads/2018/08/chicken-curry-11-500x500.jpg",
+             "https://www.cookingclassy.com/wp-content/uploads/2018/08/chicken-curry-11-500x375.jpg",
+             "https://www.cookingclassy.com/wp-content/uploads/2018/08/chicken-curry-11-480x270.jpg"
+          ],
+          "video":{
+             "name":"Chicken Curry",
+             "description":"Chicken pieces are cooked in an aromatic, deliciously seasoned curry sauce then it's finished off with cream for richness and cilantro for color and freshness. Serve alongside basmati rice or naan bread for soaking up the extra sauce.",
+             "url":"https://content.jwplatform.com/thumbs/noNWgSga-720.jpg",
+             "contentUrl":"https://content.jwplatform.com/videos/noNWgSga.mp4",
+             "uploadDate":"2019-04-29T18:25:04.000Z",
+             "@type":"VideoObject"
+          },
+          "recipeYield":[
+             "4"
+          ],
+          "prepTime":"PT20M",
+          "cookTime":"PT20M",
+          "totalTime":"PT40M",
+          "recipeIngredient":[
+             "1 1/2 tsp ground coriander",
+             "1 tsp ground cumin",
+             "1/2 tsp turmeric",
+             "1/2 tsp fennel seeds, (crushed in a small bag with a meat mallet)",
+             "1/2 tsp ground cinnamon",
+             "1/2 tsp ground black pepper",
+             "1/4 tsp ground mustard",
+             "1/4 tsp ground cloves",
+             "2 Tbsp olive oil",
+             "1 small yellow onion, (chopped (1 cup))",
+             "4  garlic cloves, (minced (1 1/2 Tbsp))",
+             "1 Tbsp peeled and minced fresh ginger",
+             "1 cup low-sodium chicken broth",
+             "3/4 cup drained canned diced tomatoes or peeled, seeded, diced fresh tomatoes",
+             "Salt",
+             "Cayenne pepper,  (to taste)",
+             "1 1/2 lbs boneless skinless chicken breasts, (diced into 1 1/4-inch cubes)",
+             "1 tsp cornstarch mixed with 2 tsp water ((optional))",
+             "1/3 cup heavy cream",
+             "2 Tbsp chopped cilantro"
+          ],
+          "recipeInstructions":[
+             {
+                "@type":"HowToStep",
+                "text":"In a small mixing bowl whisk together all of the spices in the spice blend, set aside.",
+                "name":"In a small mixing bowl whisk together all of the spices in the spice blend, set aside.",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-0"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"Heat olive oil in a 12-inch non-stick skillet over medium-high heat.&nbsp;",
+                "name":"Heat olive oil in a 12-inch non-stick skillet over medium-high heat.&nbsp;",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-1"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"Add in onion and saute until slightly golden brown, about 4 - 6 minutes.&nbsp;",
+                "name":"Add in onion and saute until slightly golden brown, about 4 - 6 minutes.&nbsp;",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-2"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"Add in garlic and ginger, saute 30 seconds more then add in spice blend and saute 30 seconds.&nbsp;",
+                "name":"Add in garlic and ginger, saute 30 seconds more then add in spice blend and saute 30 seconds.&nbsp;",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-3"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"Pour in chicken broth and tomatoes and bring to a boil, then reduce heat to medium-low, cover and simmer 5 minutes.",
+                "name":"Pour in chicken broth and tomatoes and bring to a boil, then reduce heat to medium-low, cover and simmer 5 minutes.",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-4"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"Pour mixture into a blender then cover with lid and remove lid insert, cover opening with a clean folded kitchen rag.&nbsp;",
+                "name":"Pour mixture into a blender then cover with lid and remove lid insert, cover opening with a clean folded kitchen rag.&nbsp;",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-5"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"Blend mixture until well pureed and smooth then return to skillet and heat skillet over medium-high heat.&nbsp;",
+                "name":"Blend mixture until well pureed and smooth then return to skillet and heat skillet over medium-high heat.&nbsp;",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-6"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"Season sauce with salt and cayenne pepper (start with about 1/2 tsp salt and a few dashes cayenne then add more to taste) then add in chicken.",
+                "name":"Season sauce with salt and cayenne pepper (start with about 1/2 tsp salt and a few dashes cayenne then add more to taste) then add in chicken.",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-7"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"Bring to a simmer then reduce heat to medium-low, cover skillet with lid and simmer until chicken has cooked through, stirring occasionally, about 8 -&nbsp; 12 minutes.",
+                "name":"Bring to a simmer then reduce heat to medium-low, cover skillet with lid and simmer until chicken has cooked through, stirring occasionally, about 8 -&nbsp; 12 minutes.",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-8"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"During the last minute of cooking stir in the cornstarch and water slurry if desired, to thicken sauce slightly (or if needed thin with a little chicken broth).",
+                "name":"During the last minute of cooking stir in the cornstarch and water slurry if desired, to thicken sauce slightly (or if needed thin with a little chicken broth).",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-9"
+             },
+             {
+                "@type":"HowToStep",
+                "text":"Stir in cream then serve warm with cilantro over basmati rice.&nbsp;",
+                "name":"Stir in cream then serve warm with cilantro over basmati rice.&nbsp;",
+                "url":"https://www.cookingclassy.com/chicken-curry/#wprm-recipe-36840-step-0-10"
+             }
+          ],
+          "aggregateRating":{
+             "@type":"AggregateRating",
+             "ratingValue":"4.94",
+             "ratingCount":"114"
+          },
+          "recipeCategory":[
+             "Main Course"
+          ],
+          "recipeCuisine":[
+             "Indian"
+          ],
+          "keywords":"chicken curry",
+          "nutrition":{
+             "@type":"NutritionInformation",
+             "calories":"362 kcal",
+             "carbohydrateContent":"7 g",
+             "proteinContent":"38 g",
+             "fatContent":"19 g",
+             "saturatedFatContent":"6 g",
+             "cholesterolContent":"136 mg",
+             "sodiumContent":"726 mg",
+             "fiberContent":"1 g",
+             "sugarContent":"2 g",
+             "servingSize":"1 serving"
+          },
+          "@id":"https://www.cookingclassy.com/chicken-curry/#recipe",
+          "isPartOf":{
+             "@id":"https://www.cookingclassy.com/chicken-curry/#webpage"
+          },
+          "mainEntityOfPage":"https://www.cookingclassy.com/chicken-curry/#webpage"
+       }
+    ]
+ }
